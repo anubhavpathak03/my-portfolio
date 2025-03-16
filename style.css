@@ -101,7 +101,8 @@ h1 {
     font-family: "Space Grotesk", sans-serif;
     font-family: "Montserrat";
     margin: 50px;
-    padding: 30px;
+    margin-bottom: 10px;
+    padding: 20px;
     font-size: 1.5rem;
     text-align: center;
     color: rgb(0, 0, 0);
@@ -128,7 +129,7 @@ h1 {
 .first-child {
     position: absolute;
     z-index: 1;
-    left: -4px;
+    left: -3px;
     top: -2px;
     opacity: 0.5;
     border: 0.5px solid black;
@@ -156,15 +157,38 @@ h1 {
 }
 
 .sec-2 {
+    margin-top: 30px;
+}
+
+.sec-2, a {
+    text-decoration: none;
+    color: #000000;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+.project-card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 5px;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .working-project-grid {
-    background-color: #fff;
-    border: 1px solid black;
+    background: white;
     border-radius: 5px;
+    border: 1px solid rgb(63, 63, 63);
+    box-shadow: 5px 5px rgba(42, 42, 42, 0.1);
+    text-align: left;
+    position: relative;
+    height: 100px;
+    display: flex;
+    flex-direction: column  ;
 }
 
 
@@ -175,12 +199,13 @@ h1 {
 
 .window-controls {
     display: flex;
-    gap: 5px;
+    gap: 0.4rem;
+    padding: 5px;
 }
 
 .red-dot, .yellow-dot, .green-dot {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     display: inline-block;
 }
@@ -196,6 +221,114 @@ h1 {
 .green-dot {
     background-color: #28c840;
 }
+
+.line {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.short-Description {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.short-Description {
+    margin-top: 2px;
+}
+
+.desc {
+    font-size: 0.6rem;
+}
+
+.tech-stack {
+    display: flex;
+    font-size: 0.8rem;
+}
+.circle {
+    margin-top: 25px;
+    width: 8px;
+    height: 8px;
+    background-color: #0088a9;
+    border-radius: 50%;
+    gap: 10px;
+}
+
+.tech-stack-name {
+    margin-top: 20px;
+    padding-left: 5px;
+}
+
+.work {
+    position: absolute;
+    font-size: 0.5rem;
+    font-weight: 600;
+    border: 1px dashed black;
+    background-color: #ffbd2e;
+    width: 60px;
+    height: 15px;
+    padding-top: 2px;
+    text-align: center;
+    right: 10px;
+    bottom: 10px;
+}
+
+article {
+    transition: transform 0.5s ease-out;
+}
+
+article:hover {
+    transform: scale(0.9) rotate(2deg);
+}
+
+.project-name:hover {
+    color: rgb(82, 82, 208);
+    text-decoration: underline;
+}
+
+
+.socials-links {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-1 {
+    width: 25px;
+}
+.icon-2 {
+    width: 20px;
+}
+.icon-3 {
+    width: 22px;
+}
+
+.github-icon, .twitter-icon, .linked-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.8s ease-in-out;
+}
+
+.github-icon:hover,
+.twitter-icon:hover,
+.linked-icon:hover {
+    background-color: #ffffff;
+    transform: scale(0.8);
+    opacity: 0.8;
+}
+
+
+
+
+
+
 
 
 
