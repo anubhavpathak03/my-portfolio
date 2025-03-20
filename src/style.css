@@ -11,7 +11,7 @@ html, body {
     padding: 0;
     font-family: "Montserrat";
     user-select: none;
-    background-color: #fff;
+    background-color: #F3F4F6;
 }
 
 
@@ -88,10 +88,10 @@ main {
 }
 
 .sec-1 {
-    background: url("../assets/wave.svg");
+    background: url("../assets/wave-1.svg");
     position: absolute;
     width: 100%;
-    height: 650px;
+    height: 700px;
     top: 50px;
     background-size: cover;
     background-position: center;
@@ -173,8 +173,9 @@ h2 {
 .project-card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    gap: 30px;
+    padding: 10px;
+    padding-top: 10px;
     max-width: 1000px;
     margin: auto;
 }
@@ -183,14 +184,13 @@ h2 {
     background: white;
     border-radius: 5px;
     border: 1px solid rgb(63, 63, 63);
-    box-shadow: 5px 5px rgba(42, 42, 42, 0.1);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
     text-align: left;
     position: relative;
     height: 150px;
     display: flex;
     flex-direction: column  ;
 }
-
 
 .working-project-grid-header {
     display: flex;
@@ -331,10 +331,11 @@ h2 {
     font-family: "Space Grotesk", sans-serif;
     position: absolute;
     height: 500px;
-    top: 500px;
+    top: 600px;
     display: flex;
     flex-direction: column;
     /* background-color: #ffae00; */
+    justify-content: center;
     position: relative;
     
 }
@@ -431,7 +432,7 @@ h2 {
 
 .written-content {
     position: absolute;
-    right: 200px;
+    right: 220px;
     top: 20px;
 }
 .image-size-1 {
@@ -458,23 +459,26 @@ h2 {
 
 .self-image-circular-1 {
     position: relative;
-    background: url("../assets/output-onlinepngtools.png");
+    background: url("../assets/gray-scale-photo.jpg");
     background-position: center;
-    background-size: 260px;
+    background-size: 210px;
     background-repeat: no-repeat;
     left: 200px;
-    border: 2px solid black;
+    border: 2px solid rgb(64, 64, 64);
     z-index: 3;
-    box-shadow: 10px 10px 10px #000000;
+    background-color: #1d1d1d;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
 }
 .self-image-circular-2 {
-    right: 40px;
+    left: 210px;
     z-index: -2;
+    opacity: 0.8;
 }
 
 .self-image-circular-3 {
     z-index: -1;
-    right: 40px;
+    left: 205px;
+    opacity: 0.4;
 }
 
 .about-my-section {
@@ -486,7 +490,6 @@ h2 {
     margin-left: 230px;
     max-width: 1000px;
     gap: 2rem;
-
     top: 5px;
 }
 
@@ -502,4 +505,110 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+}
+
+
+.Project-sec {
+    position: absolute;
+    width: 100%;
+    height: 840px;
+    top: 1220px;
+    background-color: #fff;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+
+.Project-sec-article {
+    padding: 50px 130px;
+    height: 100%;
+    font-size: 1.5rem;
+}
+
+.Project-sec-article-first-para {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+
+.link {
+    text-decoration: underline;
+}
+
+
+.leetcode-link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+.leetcode-container {
+    position: relative;
+    z-index: 2;
+    height: 495px;
+    width: 900px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #201f1f;
+}
+
+
+.leetcode-image {
+    background-position: center;
+    width: 97%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.leetcode-container::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffee, #4b00ff, #ff00c8, #ff0000);
+    background-size:300% 100%;
+    z-index: -1;
+    border-radius: 14px;
+    animation: animated-gradient 4s linear infinite;
+}
+
+@keyframes animated-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+#Project-card-1 {
+    position: absolute;
+    background-image: url("../assets/white-apple.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 360px;
+    top: 2060px;
+    width: 100%;
+}
+
+.Project-card-1-article {
+    margin: 80px;
+    padding: 90px;
+    font-size: 2rem;
 }

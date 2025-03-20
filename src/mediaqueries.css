@@ -92,8 +92,126 @@
     
 
     /* about section media query */
+        /* about section media query */
     .about-me-sec {
-        top: 800px;
+        top: 700px;
+        width: 100%;
+        /* padding: 20px; */
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .about-me-div {
+        margin: 20px;
+        padding: 5px;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        /* flex-direction: column-reverse; */
+        position: relative;
+        gap: 2rem;
+    }
+
+    .self-image {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-me-div-child-1 {
+        padding: 0;
+        padding-left: 5px;
+        width: 100%;
+    }
+
+    .about-me-div-child-2 {
+        width: 80%;
+    }
+
+    
+    
+    .self-image-circular-1, .self-image-circular-2, .self-image-circular-3 {
+        position: absolute;
+        width: 156px;
+        height: 156px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        border: 0.5px solid black; 
+        right: 50px;
+        top: 10px;
+        padding-top: 30px; 
+        
+    }
+    
+    .self-image-circular-1 {
+        position: relative;
+        background: url("../assets/gray-scale-photo.jpg");
+        background-position: center;
+        background-size: 130px;
+        background-repeat: no-repeat;
+        left: 120px;
+        top: 5px;
+        border: 2px solid black;
+        z-index: 3;
+        background-color: #1d1d1d;
+        box-shadow: 10px 10px 10px #212121;
+    }
+    .self-image-circular-2 {
+        left: 126px;
+        top: 5px;
+        z-index: -2;
+    }
+    
+    .self-image-circular-3 {
+        z-index: -1;
+        top: 5px;
+        left: 123px;
+    }
+    
+    .written-content {
+        position: relative;
+        top: 52px;
+        right: 95px;
+    }
+
+    .image-size-1 {
+        width: 250px;
+    }
+
+    .resume-btn {
+        margin-top: 30px;
+    }
+    
+    .about-me-p-1, .about-me-p-2 {
+        font-size: 0.8rem;
+    }
+    
+    .about-my-section {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        height: auto;
+        justify-content: center;
+        margin: 0;
+        padding: 30px;
+        width: 100%;
+        top: 310px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    h2 {
+        font-size: 1rem;
+    }
+    .goal-container {
+        margin-top: 15px;
+    }
+
+        /* about section media query */
+    .about-me-sec {
+        top: 850px;
         width: 100%;
         /* padding: 20px; */
         display: flex;
@@ -137,7 +255,7 @@
         border-radius: 50%;
         box-sizing: border-box;
         border: 0.5px solid black; 
-        right: 50px;
+        /* right: 50px; */
         top: 10px;
         padding-top: 30px; 
         
@@ -145,18 +263,19 @@
     
     .self-image-circular-1 {
         position: relative;
-        background: url("../assets/output-onlinepngtools.png");
+        background: url("../assets/gray-scale-photo.jpg");
         background-position: center;
-        background-size: 155px;
+        background-size: 130px;
         background-repeat: no-repeat;
-        left: 160px;
+        left: 200px;
         top: 30px;
         border: 2px solid black;
         z-index: 3;
+        background-color: #1d1d1d;
         box-shadow: 10px 10px 10px #212121;
     }
     .self-image-circular-2 {
-        left: 166px;
+        left: 206px;
         top: 33px;
         z-index: -2;
     }
@@ -164,14 +283,15 @@
     .self-image-circular-3 {
         z-index: -1;
         top: 32px;
-        left: 164px;
+        left: 204px;
     }
     
     .written-content {
         position: relative;
-        top: 45px;
-        left: 2px;
+        top: 54px;
+        left: 20px;
     }
+
     .image-size-1 {
         width: 250px;
     }
@@ -193,15 +313,92 @@
         padding: 30px;
         top: 500px;
     }
-}
 
-@media screen and (max-width: 600px){
-    h2 {
+
+    .Project-sec {
+        position: absolute;
+        width: 100%;
+        height: 840px;
+        top: 1700px;
+        background-color: #fff;
+        font-family: "Space Grotesk", sans-serif;
+    }
+
+
+    .Project-sec-article {
+        padding: 20px;
+        height: 100%;
+        font-size: 1.5rem;
+    }
+
+    .Project-sec-article-first-para {
         font-size: 1rem;
-    }
-    .goal-container {
-        margin-top: 15px;
+        margin-top: 20px;
     }
 
+
+    .link {
+        text-decoration: underline;
+    }
+
+
+    .leetcode-link {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+
+    .leetcode-container {
+        position: relative;
+        z-index: 2;
+        height: 210px;
+        width: 900px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        background-color: #201f1f;
+    }
+
+
+    .leetcode-image {
+        background-position: center;
+        width: 97%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .leetcode-container::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffee, #4b00ff, #ff00c8, #ff0000);
+        background-size: 200% 100%;
+        z-index: -1;
+        border-radius: 14px;
+        animation: animated-gradient 4s linear infinite;
+    }
+
+    @keyframes animated-gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
 }
 
