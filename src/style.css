@@ -476,7 +476,7 @@ h2 {
 .self-image-circular-2 {
     left: 205px;
     z-index: -2;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .self-image-circular-3 {
@@ -605,6 +605,7 @@ h2 {
     height: 600px;
     top: 2050px;
     width: 100%;
+    /* background-color: #000000; */
 }
 
 .svg-file {

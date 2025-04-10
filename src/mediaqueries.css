@@ -157,7 +157,7 @@
 
     .self-image-circular-1 {
         position: relative;
-        background: url("../assets/gray-scale-photo.jpg");
+        background: url("assets/gray-scale-photo.jpg");
         background-position: center;
         background-size: 130px;
         background-repeat: no-repeat;
@@ -214,7 +214,7 @@
     }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 600px){
     h2 {
         font-size: 1.2rem;
     }
@@ -284,7 +284,7 @@
 
     .self-image-circular-1 {
         position: relative;
-        background: url("../assets/gray-scale-photo.jpg");
+        background: url("assets/gray-scale-photo.jpg");
         background-position: center;
         background-size: 130px;
         background-repeat: no-repeat;
@@ -338,9 +338,9 @@
 
 
     .Project-sec-article {
-        padding: 20px;
+        padding: 15px;
         height: 100%;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .Project-sec-article-first-para {
@@ -354,64 +354,17 @@
     }
 
 
-    .leetcode-link {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
+    /* .leetcode-link {
         margin-top: 20px;
     }
 
     .leetcode-container {
-        position: relative;
-        z-index: 2;
-        height: 210px;
-        width: 900px;
-        box-sizing: border-box;
-        border: 1px solid black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 12px;
-        background-color: #201f1f;
-    }
-
-
-    .leetcode-image {
-        background-position: center;
-        width: 97%;
-        height: auto;
-        border-radius: 12px;
+        height: 250px;
     }
 
     .leetcode-container::before {
-        content: "";
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        right: -2px;
-        bottom: -2px;
-        background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffee, #4b00ff, #ff00c8, #ff0000);
         background-size: 200% 100%;
-        z-index: -1;
-        border-radius: 14px;
-        animation: animated-gradient 4s linear infinite;
-    }
-
-    @keyframes animated-gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-
-        50% {
-            background-position: 100% 50%;
-        }
-
-        100% {
-            background-position: 0% 50%;
-        }
-    }
+    } */
 
     #last-section {
         top: 2210px;
@@ -430,7 +383,7 @@
 
     .container-2 {
         flex-direction: column-reverse;
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
         margin-left: 0;
         margin-right: 0;
         padding-left: 0;
@@ -447,3 +400,139 @@
     }
 }
 
+
+@media screen and (min-width: 600px) and (max-width: 1230px) {
+
+    .about-page {
+        padding: 20px;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    #last-section {
+        top: 2150px;
+    }
+
+    
+    .container-2 {
+        /* flex-direction: column-reverse; */
+        /* bottom: 20px; */
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        gap: 2rem;
+        padding-top: 20px;
+    }
+    
+    .heading-contact {
+        font-size: 3rem;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    
+    
+    .contact-form {
+        width: 80%;               
+        max-width: 400px;         
+        margin: 0;          
+        padding: 0;      
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        font-size: 1rem;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .contact-form button {
+        width: 50%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+    
+    .tech-stack-last {
+        margin: 0;
+    }
+    
+    .tech-stack-last canvas {
+        width: 90%;
+    }
+    
+    
+    .Project-sec-article {
+        padding: 50px 50px;
+    }
+
+
+    .leetcode-image {
+        height: 95%;
+    }
+
+    .leetcode-container {
+        height: 500px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .container-2 {
+        gap: 0;
+        padding-top: 0px;
+    }
+
+    .written-content {
+        right: 240px;
+    }
+    .image-size-1 {
+        width: 220px;
+    }
+    
+    .self-image-circular-1 {
+        left: 160px;
+    }
+    .self-image-circular-2 {
+        left: 163px;
+    }
+    .self-image-circular-3 {
+        left: 166px;
+    }
+
+    
+    .heading-contact {
+        font-size: 3rem;
+        padding-bottom: 5px;
+    }
+
+    .contact-form {
+        max-width: 500px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tech-stack-last {
+        margin: 0;
+    }
+    
+    .tech-stack-last canvas {
+        width: 95%;
+    }
+    
+    .leetcode-image {
+        /* width: 95%; */
+        height: auto;
+    }
+    
+    .leetcode-container {
+        /* height: 105%; */
+        width: auto;
+        height: 80%;
+    }
+
+    .leetcode-container::before {
+        background-size: 200% 100%;
+    }
+}
