@@ -1,4 +1,4 @@
-@media(max-width: 1200px) {
+@media(max-width: 1221px) {
     header .nav-title {
         position: fixed;
         top: 0;
@@ -145,6 +145,16 @@
         
     }
     
+    .written-content {
+        position: relative;
+        top: 52px;
+        right: 95px;
+    }
+
+    .image-size-1 {
+        width: 250px;
+    }
+
     .self-image-circular-1 {
         position: relative;
         background: url("../assets/gray-scale-photo.jpg");
@@ -170,15 +180,6 @@
         left: 123px;
     }
     
-    .written-content {
-        position: relative;
-        top: 52px;
-        right: 95px;
-    }
-
-    .image-size-1 {
-        width: 250px;
-    }
 
     .resume-btn {
         margin-top: 30px;
@@ -199,11 +200,23 @@
         width: 100%;
         top: 310px;
     }
+    .Project-sec {
+        top: 1260px;
+    }
+
+    .leetcode-container {
+        height: 390px;
+        width: 880px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
     h2 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .goal-container {
         margin-top: 15px;
@@ -245,8 +258,6 @@
     .about-me-div-child-2 {
         width: 80%;
     }
-
-    
     
     .self-image-circular-1, .self-image-circular-2, .self-image-circular-3 {
         position: absolute;
@@ -261,6 +272,16 @@
         
     }
     
+    .written-content {
+        position: relative;
+        top: 50px;
+        left: 0;
+    }
+
+    .image-size-1 {
+        width: 280px;
+    }
+
     .self-image-circular-1 {
         position: relative;
         background: url("../assets/gray-scale-photo.jpg");
@@ -268,7 +289,7 @@
         background-size: 130px;
         background-repeat: no-repeat;
         left: 200px;
-        top: 30px;
+        top: 25px;
         border: 2px solid black;
         z-index: 3;
         background-color: #1d1d1d;
@@ -276,25 +297,16 @@
     }
     .self-image-circular-2 {
         left: 206px;
-        top: 33px;
+        top: 25px;
         z-index: -2;
     }
     
     .self-image-circular-3 {
         z-index: -1;
-        top: 32px;
+        top: 25px;
         left: 204px;
     }
     
-    .written-content {
-        position: relative;
-        top: 54px;
-        left: 20px;
-    }
-
-    .image-size-1 {
-        width: 250px;
-    }
 
     .resume-btn {
         margin-top: 30px;
@@ -332,7 +344,7 @@
     }
 
     .Project-sec-article-first-para {
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin-top: 20px;
     }
 
@@ -399,6 +411,39 @@
         100% {
             background-position: 0% 50%;
         }
+    }
+
+    #last-section {
+        top: 2210px;
+    }
+
+    .svg-file {
+        max-height: 320px;
+    }
+
+    .about-page {
+        top: 315px;
+        width: 100%;
+        padding: 0;
+        height: 100vh;
+    }
+
+    .container-2 {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        gap: 2rem;
+        padding-top: 20px;
+    }
+
+    .tech-stack-last {
+        margin: 0;
+    }
+
+    .tech-stack-last canvas {
+        width: 350px;
     }
 }
 

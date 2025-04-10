@@ -3,24 +3,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const ctx = canvas.getContext("2d");
 
     const logos = [
-        { src: "../assets/html-5.png" },
-        { src: "../assets/css-3.png" },
-        { src: "../assets/js.png" },
-        { src: "../assets/react-js.png" },
-        { src: "../assets/temp-nodejs.png" },
-        { src: "../assets/python.png" },
-        { src: "../assets/cplusplus.png" },
-        { src: "../assets/typescript.png" },
-        { src: "../assets/java_icon-big-size.png" },
-        { src: "../assets/github-techstack-icon.png" },
-        { src: "../assets/vscode-icon.png" },
-        { src: "../assets/Express.png" },
-        { src: "../assets/postman.png" },
-        { src: "../assets/docker.png" },
-        { src: "../assets/tailwind-css.png" },
-        // { src: "../assets/" },
-        // { src: "../assets/" },
-        // { src: "../assets/" },
+        { src: "assets/html-5.png" },
+        { src: "assets/css-3.png" },
+        { src: "assets/js.png" },
+        { src: "assets/react-js.png" },
+        { src: "assets/nodejs-original.png" },
+        { src: "assets/python.png" },
+        { src: "assets/cplusplus.png" },
+        { src: "assets/typescript.png" },
+        { src: "assets/java_icon-big-size.png" },
+        { src: "assets/github-techstack-icon.png" },
+        { src: "assets/vscode-icon.png" },
+        { src: "assets/Express.png" },
+        { src: "assets/postman.png" },
+        { src: "assets/docker.png" },
+        { src: "assets/tailwind-css.png" },
+        { src: "assets/database-mongo-db.png" },
+        // { src: "assets/" },
+        // { src: "assets/" },
 
     ];
 
@@ -36,7 +36,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const balls = []; 
 
-    const size = 40;
+
+    let size = 35;
+    if(window.innerWidth < 900) {
+        size = 30;    
+    }
 
     logos.forEach((logo) => {
         const img = new Image();
