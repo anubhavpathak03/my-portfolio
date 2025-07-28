@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+    /* font-family: "Montserrat"; */
+    user-select: none;
+    background-color: #212121;
+    scroll-behavior: smooth;
+}
+
+/* Project Section Styling */
+.project-section {
+    padding: 60px 20px;
+    /* background-color: #f9f9f9; */
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23230046' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%232f0052' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%233b075e' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%2348156a' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23552277' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Main Section Heading */
+.project-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+/* Section Subheadings */
+.project-subheading {
+    font-size: 1.8rem;
+    margin: 40px 0 20px 30px;
+    color: #fff;
+}
+
+/* Project Grid Container */
+.project-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Project Card Box */
+.project-card {
+    /* background-color: #caf40d; */
+    background: url(./assets/gradient.svg);
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Project Image */
+.project-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Project Name */
+.project-name {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+/* Project Description */
+.project-card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Link Button */
+.project-card a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.project-card a:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    position: relative;
+    margin-bottom: 0;
+    top: 60px;
+}

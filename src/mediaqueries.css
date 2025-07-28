@@ -367,7 +367,7 @@
     } */
 
     #last-section {
-        top: 2210px;
+        top: 2250px;
     }
 
     .svg-file {
@@ -410,7 +410,7 @@
     }
 
     #last-section {
-        top: 2150px;
+        top: 2080px;
     }
 
     
@@ -463,16 +463,18 @@
     
     
     .Project-sec-article {
-        padding: 50px 50px;
+        padding: 40px 40px;
+        gap: 5px;
     }
 
-
     .leetcode-image {
-        height: 95%;
+        width: 600px;
+        height: 400px; 
     }
 
     .leetcode-container {
-        height: 500px;
+        width: 650px;
+        height:450px; 
     }
 }
 
@@ -521,18 +523,14 @@
         width: 95%;
     }
     
-    .leetcode-image {
-        /* width: 95%; */
-        height: auto;
+    .Project-sec-article {
+        gap: 5px;
     }
-    
     .leetcode-container {
         /* height: 105%; */
         width: auto;
-        height: 80%;
+        height: 100%;
     }
 
-    .leetcode-container::before {
-        background-size: 200% 100%;
-    }
+    
 }

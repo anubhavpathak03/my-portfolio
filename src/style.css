@@ -240,9 +240,22 @@ h2 {
     margin-top: 2px;
 }
 
-.desc {
+.desc-1 {
     font-size: 0.7rem;
-    padding-top: 0.5em;
+    /* padding-top: 0.5em; */
+    /* margin-bottom: -6px; */
+}
+.desc-1 > h3 {
+    font-size: 1.2rem;
+}
+
+.desc-2 {
+    width: 1/2;
+    font-size: 0.7rem;
+    /* padding-top: 0.5em; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .tech-stack {
@@ -250,7 +263,7 @@ h2 {
     font-size: 0.8rem;
 }
 .circle {
-    margin-top: 51px;
+    margin-top: 39px;
     width: 8px;
     height: 8px;
     background-color: #0088a9;
@@ -259,7 +272,7 @@ h2 {
 }
 
 .tech-stack-name {
-    margin-top: 47px;
+    margin-top: 35px;
     padding-left: 5px;
 }
 
@@ -521,83 +534,75 @@ h2 {
     font-family: "Space Grotesk", sans-serif;
 }
 
-
 .Project-sec-article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Align h1 and p to left */
     padding: 50px 130px;
     height: 100%;
     font-size: 1.5rem;
+    gap: 30px;
 }
 
 .Project-sec-article-first-para {
     font-size: 1.2rem;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 
 .link {
     text-decoration: underline;
+    background-color: #ffbd2e;
+    padding: 2px 5px;
+    border-radius: 5px;
 }
 
-
+/* LeetCode container centered separately */
 .leetcode-link {
-    position: relative;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    margin-top: 40px;
+    margin-top: 30px;
+}
+.leetcode-image {
+    width: 80%;
+    max-width: 860px;
+    height: 300px;
+    border-radius: 12px;
 }
 
 .leetcode-container {
+    cursor: pointer;
     position: relative;
     z-index: 2;
-    height: 495px;
-    width: 900px;
+    height: auto;
+    width: 600px;
     box-sizing: border-box;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    background-color: #201f1f;
+    /* border-width: 5px;
+    border-style: solid;
+    border-image:
+            linear-gradient(to bottom,
+                red,
+                rgba(0, 0, 0, 0)) 1 100%; */
+    background: #0f0c29;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px;
 }
 
-
 .leetcode-image {
-    background-position: center;
-    width: 97%;
+    width: 100%;
     height: auto;
     border-radius: 12px;
 }
-
-.leetcode-container::before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffee, #4b00ff, #ff00c8, #ff0000);
-    background-size:300% 100%;
-    z-index: -1;
-    border-radius: 14px;
-    animation: animated-gradient 4s linear infinite;
-}
-
-@keyframes animated-gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 
 
 #last-section {
@@ -638,6 +643,11 @@ h2 {
     margin-left: 40px;
     padding-top: 20px;
     padding-left: 20px;
+}
+
+.footer-div {
+    position: relative;
+    top: 120px;
 }
 
 .contact-form {
