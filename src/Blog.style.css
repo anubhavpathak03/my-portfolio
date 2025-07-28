@@ -15,6 +15,7 @@ body {
     user-select: none;
     /* background-color: #eae192a9; */
     scroll-behavior: smooth;
+    background-color: #330033;
 }
 
 
@@ -95,4 +96,10 @@ body {
 
 .adding-soon:hover {
     text-decoration: underline;
+}
+
+footer {
+    position: relative;
+    margin-bottom: 0;
+    top: 60px;
 }

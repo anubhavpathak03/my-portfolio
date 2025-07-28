@@ -1,13 +1,13 @@
-var _0x1234 = ['log', 'Hello']; 
-console[_0x1234[0]](_0x1234[1]);
+// var _0x1234 = ['log', 'Hello']; 
+// console[_0x1234[0]](_0x1234[1]);
 
 
-document.addEventListener("contextmenu", e => e.preventDefault());
-document.onkeydown = function(e) {
-    if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
-        return false;
-    }
-};
+// document.addEventListener("contextmenu", e => e.preventDefault());
+// document.onkeydown = function(e) {
+//     if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+//         return false;
+//     }
+// };
 
 
 
