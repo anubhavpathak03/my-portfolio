@@ -214,7 +214,97 @@
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (min-width: 600px) and (max-width: 1230px) {
+    
+    #last-section {
+        top: 2010px;
+    }
+    
+    .about-page {
+        /* margin-bottom: 100px; */
+        padding: 0;
+        /* top: 20px; */
+        height: 120%;
+    }
+
+
+    
+    .container-2 {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        bottom: 20px;
+        /* gap: 2rem; */
+        padding: 0;
+        /* margin: 0px; */
+        gap: 0;
+    }
+    
+    .heading-contact {
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    
+    .footer-div {
+        position: relative;
+        top: 20px;
+    }
+    
+    
+    .contact-form {
+        width: 80%;               
+        max-width: 400px;         
+        margin: 0;          
+        padding: 0;      
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        font-size: 1rem;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .contact-form button {
+        width: 40%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+    
+    .tech-stack-last {
+        margin: 0;
+    }
+    
+    .tech-stack-last canvas {
+        width: 100%;
+    }
+    
+    
+    .Project-sec-article {
+        padding: 20px 20px;
+        gap: 5px;
+    }
+
+    .leetcode-link {
+        width: 100%;
+    }
+
+    .leetcode-container {
+        width: 500px;
+        height: 350px; 
+    }
+
+    .leetcode-image {
+        width: 450px;
+        height: 450px; 
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
     h2 {
         font-size: 1.2rem;
     }
@@ -367,7 +457,7 @@
     } */
 
     #last-section {
-        top: 2250px;
+        top: 2290px;
     }
 
     .svg-file {
@@ -378,7 +468,8 @@
         top: 315px;
         width: 100%;
         padding: 0;
-        height: 100vh;
+        height: 110%;
+
     }
 
     .container-2 {
@@ -413,99 +504,6 @@
     p {
         font-size: 10px;
     }
-}
-
-
-@media screen and (min-width: 600px) and (max-width: 1230px) {
-    
-    #last-section {
-        top: 2010px;
-    }
-    
-    .about-page {
-        /* margin-bottom: 100px; */
-        padding: 0;
-        /* top: 20px; */
-        height: 120%;
-    }
-
-
-    
-    .container-2 {
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        bottom: 20px;
-        /* gap: 2rem; */
-        padding: 0;
-        /* margin: 0px; */
-        gap: 0;
-    }
-    
-    .heading-contact {
-        font-size: 2rem;
-        text-align: center;
-        padding-bottom: 10px;
-    }
-    
-    .footer-div {
-        position: relative;
-        top: 20px;
-    }
-    
-    
-    .contact-form {
-        width: 80%;               
-        max-width: 400px;         
-        margin: 0;          
-        padding: 0;      
-    }
-    
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-        font-size: 1rem;
-        padding: 15px;
-        margin-bottom: 15px;
-    }
-    
-    .contact-form button {
-        width: 40%;
-        padding: 10px;
-        font-size: 1rem;
-    }
-    
-    .tech-stack-last {
-        margin: 0;
-    }
-    
-    .tech-stack-last canvas {
-        width: 100%;
-    }
-    
-    
-    .Project-sec-article {
-        padding: 20px 20px;
-        gap: 5px;
-    }
-
-    .leetcode-link {
-        width: 100%;
-    }
-
-    .leetcode-container {
-        width: 500px;
-        height: 350px; 
-    }
-
-    .leetcode-image {
-        width: 450px;
-        height: 450px; 
-    }
-
-}
-
-
-@media screen and (max-width: 600px) {
     
     .container-2 {
         gap: 0px;
