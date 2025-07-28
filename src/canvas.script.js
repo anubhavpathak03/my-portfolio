@@ -50,8 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
             img: img,
             x: Math.random() * (canvas.width - size),
             y: Math.random() * (canvas.height - size),
-            dx: (Math.random() - 0.5) * 3, // speed in x
-            dy: (Math.random() - 0.5) * 3, // speed in y
+            dx: (Math.random() - 0.5) * 5, // speed in x
+            dy: (Math.random() - 0.5) * 4, // speed in y
             size: size
         });
         };

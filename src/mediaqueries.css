@@ -1,4 +1,4 @@
-@media(max-width: 1221px) {
+@media screen and (max-width: 1221px) {
     header .nav-title {
         position: fixed;
         top: 0;
@@ -274,8 +274,8 @@
     
     .written-content {
         position: relative;
-        top: 50px;
-        left: 0;
+        top: 60px;
+        left: -10px;
     }
 
     .image-size-1 {
@@ -398,38 +398,59 @@
     .tech-stack-last canvas {
         width: 350px;
     }
+
+    .heading-contact {
+        font-size: 1rem;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .footer-div {
+        position: relative;
+        top: 20px;
+    }
+    .footer-div,
+    p {
+        font-size: 10px;
+    }
 }
 
 
 @media screen and (min-width: 600px) and (max-width: 1230px) {
-
-    .about-page {
-        padding: 20px;
-        padding-top: 80px;
-        padding-bottom: 40px;
-    }
-
+    
     #last-section {
-        top: 2080px;
+        top: 2010px;
     }
+    
+    .about-page {
+        /* margin-bottom: 100px; */
+        padding: 0;
+        /* top: 20px; */
+        height: 120%;
+    }
+
 
     
     .container-2 {
-        /* flex-direction: column-reverse; */
-        /* bottom: 20px; */
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        gap: 2rem;
-        padding-top: 20px;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        bottom: 20px;
+        /* gap: 2rem; */
+        padding: 0;
+        /* margin: 0px; */
+        gap: 0;
     }
     
     .heading-contact {
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: center;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
     
+    .footer-div {
+        position: relative;
+        top: 20px;
+    }
     
     
     .contact-form {
@@ -448,7 +469,7 @@
     }
     
     .contact-form button {
-        width: 50%;
+        width: 40%;
         padding: 10px;
         font-size: 1rem;
     }
@@ -458,31 +479,36 @@
     }
     
     .tech-stack-last canvas {
-        width: 90%;
+        width: 100%;
     }
     
     
     .Project-sec-article {
-        padding: 40px 40px;
+        padding: 20px 20px;
         gap: 5px;
     }
 
-    .leetcode-image {
-        width: 600px;
-        height: 400px; 
+    .leetcode-link {
+        width: 100%;
     }
 
     .leetcode-container {
-        width: 650px;
-        height:450px; 
+        width: 500px;
+        height: 350px; 
     }
+
+    .leetcode-image {
+        width: 450px;
+        height: 450px; 
+    }
+
 }
 
 
 @media screen and (max-width: 600px) {
     
     .container-2 {
-        gap: 0;
+        gap: 0px;
         padding-top: 0px;
     }
 
@@ -505,12 +531,12 @@
 
     
     .heading-contact {
-        font-size: 3rem;
+        font-size: 2rem;
         padding-bottom: 5px;
     }
 
     .contact-form {
-        max-width: 500px;
+        max-width: 400px;
         width: 100%;
         padding: 10px;
     }
@@ -531,6 +557,13 @@
         width: auto;
         height: 100%;
     }
+    .footer-div {
+        position: relative;
+        top: 20px;
+    }
 
-    
+    .footer-div,
+    p {
+        font-size: 10px;
+    }
 }
