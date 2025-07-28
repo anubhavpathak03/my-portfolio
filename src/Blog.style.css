@@ -83,3 +83,16 @@ body {
 .blog-read-more:hover {
     text-decoration: underline;
 }
+
+
+.adding-soon {
+    position: relative;
+    text-decoration: none;
+    color: #00ffee;
+    font-weight: bold;
+    left: 100px;
+}
+
+.adding-soon:hover {
+    text-decoration: underline;
+}
