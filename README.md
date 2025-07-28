@@ -1,5 +1,5 @@
 My Portfolio Project 
 --
-[link](https://my-portfolio-mu-jade-48.vercel.app/)
+[link](https://anubhavpathak-portfolio.netlify.app/)
 
 works going on to add projects in projects-section
