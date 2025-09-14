@@ -551,6 +551,10 @@ h2 {
 }
 
 
+.Project-sec-article-h1 {
+    font-size: 1.5em;
+}
+
 .link {
     text-decoration: underline;
     background-color: #ffbd2e;

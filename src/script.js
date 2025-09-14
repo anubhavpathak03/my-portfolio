@@ -17,13 +17,11 @@ const username = "anubhavpathak03";
 fetch("https://leetcode-stats-api.herokuapp.com/" + username)
 .then((res) => res.json())
 .then((data) => {
-    document.getElementById("leetcode-count").innerText = 
-    `Total Problems Solved: ${data.totalSolved}`;
+    document.getElementById("leetcode-count").innerText = `Total Problems Solved: ${data.totalSolved}`;
 })
 .catch((err) => {
     console.error("Error fetching LeetCode data:", err);
-    document.getElementById("leetcode-count").innerText = 
-    "Unable to load problem count.";
+    // document.getElementById("leetcode-count").innerText = "Unable to load problem count";
 });
 
 
